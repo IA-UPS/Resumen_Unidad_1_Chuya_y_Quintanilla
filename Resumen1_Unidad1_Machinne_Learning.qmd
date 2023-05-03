@@ -1,0 +1,828 @@
+---
+title: "Resumen1_Unidad1_Machine_Learning"
+author: "Maria Isabel Chuya_Nataly Quintanilla"
+format: pdf
+editor: visual
+---
+
+**Capítulo 1: Introducción al aprendizaje automático**
+
+El aprendizaje automático se enfoca en aplicaciones prácticas y está más relacionado con la tarea de enseñar a una computadora a resolver problemas específicos. Además, el aprendizaje automático proporciona un conjunto de herramientas para transformar datos en conocimiento accionable, en este capítulo se explicarán los conceptos fundamentales que definen y diferencian los enfoques más comunes del aprendizaje automático.
+
+1.  ***Los orígenes del aprendizaje automático***
+
+    el aprendizaje automático surgió de la búsqueda de inteligencia artificial. Ya en los primeros días de la IA como disciplina académica, algunos investigadores estaban interesados en que las máquinas aprendieran de los datos. Intentaron abordar el problema con varios métodos simbólicos, así como lo que luego se denominaron «redes neuronales»; estos fueron en su mayoría perceptrones y otros modelos que luego se descubrieron como reinvenciones de los modelos lineales de estadística generalizados. También se empleó el razonamiento probabilístico, especialmente en el diagnóstico médico automatizado.
+
+    La invención de los sensores electrónicos contribuyó aún más a la riqueza de los datos registrados. Estos sensores procesan los datos de manera diferente a los humanos, lo que es beneficioso en muchos sentidos, ya que los datos sensoriales sin procesar pueden permanecer objetivos, sin traducirlos al lenguaje humano.
+
+    ~*Diferencia entre aprendizaje automático y minería de datos*~
+
+    El aprendizaje automático puede observar los patrones y aprender de ellos para adaptar el comportamiento de incidencias en el futuro, mientras que la minería de datos se suele utilizar como una fuente de información para el aprendizaje de máquinas.
+
+2.  ***Usos y abusos del aprendizaje automático***
+
+    El aprendizaje automático analiza datos complejos y tiene muchas aplicaciones en diferentes campos, como:
+
+-   Predecir los resultados de las elecciones
+
+-   Identifique y filtre los mensajes de spam del correo electrónico
+
+-   Prever actividad delictiva
+
+-   Automatice las señales de tráfico de acuerdo con las condiciones de la carretera
+
+-   Producir estimaciones financieras de tormentas y desastres naturales
+
+-   Examinar la rotación de clientes
+
+-   Crea aviones de pilotaje automático y coches de conducción automática.
+
+-   Identificar personas con capacidad para donar
+
+-   Dirigir la publicidad a tipos específicos de consumidores
+
+Los algoritmos de aprendizaje automático toman datos e identifican patrones. En algunos casos, los resultados son tan exitosos que casi parecen llegar a alcanzar un estado casi legendario. A pesar de estar encontrado con los métodos de aprendizaje automático que funcionan detrás de la escena, surge la sensación de asombro y preocupación que se genera al notar que los métodos de aprendizaje son capaces de conocernos mejor de lo que nosotros mismos lo hacemos. Es importante considerar las implicaciones éticas que se derivan del uso de estas tecnologías en la extracción de datos.
+
+3.  ***Consideraciones éticas***
+
+El aprendizaje automático es una nueva disciplina que crea incertidumbre sobre las leyes y normas sociales. Al recopilar y analizar datos, se debe tener cuidado de no violar los términos de servicio, los acuerdos de uso de datos, la confianza o la confidencialidad. Las leyes comerciales pueden prohibir el uso de información sobre raza, etnia o religión. Incluso si se excluyen esos datos, los algoritmos de aprendizaje automático pueden extraer esta información de datos aparentemente inocuos. En tales casos, se debe considerar la eliminación completa de los datos de identidad. La privacidad es importante para los clientes y pueden sentirse engañados si sus datos se usan para multarlos sin su consentimiento. Los requisitos de privacidad varían según el origen, la edad y la ubicación. Las influencias culturales deben ser consideradas antes de iniciar un proyecto.
+
+4.  ***¿Cómo aprenden las máquinas?***
+
+El aprendizaje automático supone que la máquina utiliza la experiencia pasada para mejorar su rendimiento en el futuro. Sin embargo, esta definición no explica cómo estas tecnologías realmente convierten los datos en información útil.
+
+El proceso de aprendizaje de una persona o máquina se puede dividir en tres componentes principales.
+
+-   Entrada de datos: Utiliza la observación, el almacenamiento de memoria y el recuerdo.
+-   Abstracción: Implica la traducción de datos en representaciones más amplias.
+-   Generalización: Utiliza datos abstractos para formar una base para la acción.
+
+![Fig 1. Proceso de Aprendizaje](images/imaguno.png){fig-alt="Fig 1. Proceso de aprendizaje" fig-align="center"}
+
+El proceso de aprendizaje consta de tres elementos: entrada, abstracción y generalización. Estos factores están interrelacionados y tienen relaciones específicas. Mientras que los humanos hacen este proceso inconscientemente, las computadoras tienen que interpretar estos procesos. La ventaja del aprendizaje automático es que el conocimiento adquirido es transparente y puede probarse para uso futuro.
+
+5.  ***Abstracción y representación del conocimiento***
+
+Durante la representación del conocimiento, las computadoras transforman los datos de entrada en modelos que describen patrones de datos estructurados. Existen diferentes tipos de modelos, como modelos gráficos, modelos basados en reglas y modelos de redes neuronales. Ejemplos incluyen:
+
+-   Ecuaciones, diagramas como árboles y gráficos
+-   Reglas lógicas si/si no
+
+![Fig. 2 Modelo](images/figdos.png){fig-alt="Fig. 2 Modelo" fig-align="center"}
+
+Los modelos de aprendizaje pueden proporcionar automáticamente nuevos conocimientos sobre los datos y revelar conexiones significativas.
+
+6.  ***Generalización***
+
+Los algoritmos de aprendizaje automático pueden estar sesgados y sacar conclusiones erróneas debido al mal uso de la heurística. Por ejemplo, un algoritmo de reconocimiento de rostros puede tener problemas con rostros que no coinciden con su modelo y que no coinciden con ciertas características.
+
+![Fig 3. Algoritmo que reconoce rostros](images/tres-01.png){fig-alt="Figura 3. Algoritmo que reconoce rostros" fig-align="center"}
+
+7.  ***Evaluar el éxito del aprendizaje***
+
+Una de las razones por las que los modelos de aprendizaje automático no se generalizan perfectamente es el problema del ruido en los datos. Entre otras causas, este ruido es causado por cambios de datos inexplicables que pueden ser causados por eventos aleatorios, errores de medición causados por sensores incorrectos, problemas de informes de datos y errores de escritura de datos. Los intentos de modelar el ruido en los datos pueden llevar a conclusiones erróneas y a modelos más complejos que no se generalizan bien en nuevos casos.
+
+8.  ***Pasos para aplicar el aprendizaje automático a sus datos***
+
+El proceso de cada trabajo de aprendizaje automático se puede dividir en cinco pasos fáciles de aprender.
+
+1.  El primer paso implica la recolección de datos en un formato electrónico adecuado para el análisis.
+
+2.  El segundo paso se centra en la exploración y preparación de los datos, lo que requiere una gran cantidad de intervención humana.
+
+3.  El tercer paso implica entrenar un modelo en los datos
+
+4.  El cuarto paso evalúa el rendimiento del modelo.
+
+5.  Como cada modelo de aprendizaje automático está sesgado, el quinto y último paso implica mejorar el rendimiento del modelo utilizando estrategias más avanzadas, incluyendo la recolección de datos adicionales y realizando trabajo preparatorio adicional.
+
+Después de las fases de recopilación y preparación de datos, capacitación del modelo, evaluación del desempeño y mejora, el modelo se puede implementar para la tarea prevista, como proporcionar datos de evaluación, precios para pronósticos, pronósticos financieros, automatización de tareas y más. y los errores de implementación del modelo pueden proporcionar datos adicionales para entrenar una nueva generación de modelos.
+
+9.  ***Elegir un algoritmo de aprendizaje automático***
+
+El proceso de elección de un algoritmo de aprendizaje automático implica comparar las características de los datos entrenados con los errores de los métodos disponibles. La elección del algoritmo depende del tipo de datos a analizar y del problema propuesto. Es importante tener en cuenta este procedimiento al recopilar, examinar y limpiar datos.
+
+10. ***Pensando en los datos de entrada***
+
+Los algoritmos de aprendizaje automático requieren datos de entrenamiento en forma de ejemplos y funciones. - En el análisis de datos, una "unidad de observación" es la unidad por la cual se mide un evento, que puede ser una transacción, persona, tiempo, región geográfica o medida. También puede ser una combinación de estas categorías, como el seguimiento del año personal de una persona en diferentes momentos.
+
+-   En el aprendizaje, las funciones son atributos automáticos o características de ejemplos que se pueden usar para aprender un concepto deseado. Los atributos pueden variar de un conjunto de datos a otro y pueden ser palabras en un correo electrónico o datos genómicos de una biopsia.
+
+11. ***Pensando en los tipos de algoritmos de aprendizaje automático*** Hay dos tipos de algoritmos de aprendizaje automático: supervisados y no supervisados. Los algoritmos supervisados. Se usan para construir modelos predictivos, mientras que los algoritmos no supervisados se usan para construir modelos descriptivos. El tipo de algoritmo utilizado depende de la tarea de aprendizaje que se esté realizando.
+
+-   **Los** **modelos predictivos** : Se utilizan para predecir un valor utilizando otros valores en un conjunto de datos. No necesariamente necesitarán predecir eventos futuros y se pueden usar para predecir eventos pasados o eventos en tiempo real, como el control de semáforos durante las horas pico.
+-   **Los** **modelos descriptivos:** Se utilizan para resumir datos de formas nuevas e interesantes y no tienen un objetivo de aprendizaje específico que los distingue de los modelos predictivos. Dado que no existe un establecimiento de objetivos, el proceso de formación se denomina aprendizaje no supervisado. Aunque es difícil imaginar las aplicaciones de los modelos descriptivos, a menudo se utilizan en la minería de datos.
+
+#### **Hacer coincidir sus datos con un algoritmo apropiado**
+
+La siguiente tabla muestra los tipos generales de algoritmos de aprendizaje automático, aunque no cubre todos los algoritmos disponibles.
+
+![](images/cuart.png){fig-align="center"}
+
+### **Uso de R para el aprendizaje automático**
+
+Muchos algoritmos necesarios para el aprendizaje automático en R no están incluidos en la instalación básica, pero debido a que R es gratuito y de código abierto, la comunidad de expertos ha agregado algoritmos necesarios para el aprendizaje automático en R base.
+
+#### **Instalación y carga de paquetes R**
+
+El paquete RWeka que proporciona algoritmos de aprendizaje automático en el paquete Weka basado en Java. En el siguiente enlace se da más información:
+
+[Weka 3 - Minería de datos con software de aprendizaje automático de código abierto en Java (waikato.ac.nz)](https://www.cs.waikato.ac.nz/~ml/weka/)
+
+#### **Instalación de un paquete R**
+
+La forma más directa de instalar un paquete es a través de:
+
+-   *instalar.paquetes()función.*
+
+Para instalar elRWekapaquete, en el símbolo del sistema R simplemente escriba:
+
+install.packages("RWeka")
+
+R luego se conectará a CRAN y descargará el paquete en el formato correcto para su sistema operativo.
+
+#### **Instalación de un paquete mediante la interfaz de apuntar y hacer clic**
+
+R es una interfaz gráfica de usuario (GUI) para instalar paquetes disponibles en el menú Paquetes en Windows y Mac OS X.
+
+![Fig 5. Instalación de paquetes](images/cinq.png){fig-alt="Figura 5. Instalación de paquetes" fig-align="center"}
+
+El proceso de instalación del paquete RWeka es diferente en Windows y Mac OS X. En Windows, cuando selecciona la ubicación del espejo CRAN, verá una lista de paquetes donde necesita encontrar RWeka y hacer clic en Aceptar para instalarlo. ajustes. dependiente. ajuste de ubicación.
+
+En Mac OS X, haga clic en Descargar lista para descargar la lista de paquetes, busque RWeka (o use el buscador de paquetes), seleccione Instalación seleccionada y, opcionalmente, Seleccione Instalación seleccionada. dependencias" para instalar dependencias con paquetes.
+
+![Fig 6. Instalación del paquete RWeka en Windows y Mac OS X](images/sex.png){fig-align="center"}
+
+### Resumen
+
+**El aprendizaje automático** es una herramienta poderosa que surgió de la interrupción de las estadísticas, la ciencia de bases de datos y la informática. Se utiliza para encontrar información procesable en grandes volúmenes de datos, pero se debe tener cuidado para evitar abusos comunes.
+
+**El aprendizaje automático** implica abstraer datos en representaciones estructuradas y generalizar esa estructura en acción, y puede dividirse en tareas específicas como la clasificación y la predicción numérica. R proporciona soporte de aprendizaje automático en forma de paquetes descargables gratuitamente, pero estos deben instalarse antes de su uso.
+
+![](images/sep.png){fig-align="center"}
+
+## **Capítulo 2**
+
+### **Gestión y comprensión de datos**
+
+El proceso de administración y comprensión de los datos es una parte crítica y temprana de cualquier proyecto de aprendizaje automático porque cualquier algoritmo es tan bueno como sus datos de entrada. Aunque tal vez no sea tan valioso como la construcción de modelos, la preparación y exploración de datos es muy importante porque en muchos casos los datos de entrada son complejos y desordenados. La mayor parte del esfuerzo que se dedica a un proyecto de aprendizaje automático se dedica a esta fase.
+
+### **Vectores**
+
+Una estructura de datos básicos en R es un vector que almacena un conjunto ordenado de elementos del mismo tipo. El aprendizaje automático utiliza varios tipos comunes de vectores, como enteros, números, caracteres y booleanos, y hay dos valores especiales que representan valores faltantes. Comprender y manipular vectores es esencial para la preparación y el análisis de datos en proyectos de aprendizaje automático.
+
+Se pueden crear vectores simples usando:
+
+-   La función de combinación C().
+
+-   Dar un nombre usando el operador de flecha \< -, que es el operador de disparar de R.
+
+-   Operador de ajuste = en muchos otros lenguajes de programación.
+
+Ejemplo: Un conjunto de vectores que contengan datos sobre tres pacientes médicos.
+
+```{r}
+nombre_sujeto  <- c( " John Doe " , " Jane Doe " , " Steve Graves " )
+temperatura  <- c( 98.1 , 98.6 , 101.4 )
+estado_gripe  <- c( FALSO , FALSO , VERDADERO )
+```
+
+Para obtener la temperatura corporal de la paciente Jane Doe, o el elemento 2 en el vector de temperatura, simplemente escriba:
+
+```{r}
+temperatura [ 2 ]
+```
+
+Se puede obtener un rango de valores utilizando el operador de dos puntos.
+
+```{r}
+temperatura [ 2 : 3 ]
+```
+
+Para eliminar los datos de temperatura de Jane Doe, escriba:
+
+```{r}
+temperatura [ - 2 ]
+```
+
+Para incluir las dos primeras lecturas de temperatura pero eliminar la tercera, escriba:
+
+```{r}
+temperatura [c( VERDADERO , VERDADERO , FALSO )]
+```
+
+### **Factores**
+
+R proporciona una estructura de datos llamada factores para representar variables nominales en el aprendizaje automático. Los factores son un caso especial de vectores diseñados para este propósito.
+
+El uso de factores en lugar de vectores de caracteres tiene varias ventajas en términos de eficiencia de la memoria y la capacidad de manejar variables categóricas en algoritmos de aprendizaje automático. Los factores almacenan etiquetas de clase solo una vez y algunos algoritmos tienen rutinas especiales para manejar variables categóricas codificadas como factores. Esto asegura que el modelo manejará los datos correctamente.
+
+Para crear un factor a partir de un personaje vectorial, simplemente aplique la función factor(). Por ejemplo:
+
+```{r}
+genero  <-  factor (c( " MASCULINO " , " FEMENINO " , " MASCULINO " ))
+género
+```
+
+Cuando se crean factores, podemos agregar niveles adicionales que no pueden aparecer en los datos.
+
+```{r}
+sangre <- factor (c( " O " , " AB " , " A " ), niveles  = c( " A " , " B " , " AB " , " O " ))
+sangre
+```
+
+Note que cuando definimos factor para los tres pacientes, especificamos un vector adicional de cuatro posibles tipos de sangre usando niveles = declaración. Como resultado, aunque nuestros datos incluyen solo los tipos O, AB, y A, los cuatro tipos se almacenan con factor de sangre indicado por la salida Niveles: AB AB O. El almacenamiento del nivel adicional permite la posibilidad de agregar datos con el otro tipo de sangre en el futuro.
+
+### **Listas**
+
+Las listas en R le permiten almacenar diferentes tipos de valores y se usan almacenados para almacenar diferentes tipos de datos de entrada y salida, así como conjuntos de parámetros de configuración para modelos de aprendizaje automático.
+
+Para ilustrar las listas, considere el conjunto de datos de pacientes médicos. Si quisiéramos mostrar todos los datos de John Doe (sujeto 1), necesitaríamos ingresar cinco comandos R:
+
+```{r}
+nombre_del_asunto [ 1 ]
+```
+
+```{r}
+temperatura [ 1 ]
+```
+
+```{r}
+estado_gripe [ 1 ]
+```
+
+```{r}
+género [ 1 ]
+```
+
+```{r}
+sangre [ 1 ]
+```
+
+Esto parece mucho trabajo para mostrar los datos médicos de un paciente. La estructura de la lista nos permite agrupar todos los datos de un paciente en un objeto que podemos usar repetidamente. Similar a crear un vector con C(),se crea una lista usando lista()función como se muestra en el siguiente ejemplo:
+
+```{r}
+asunto1  <-  lista ( nombrecompleto = nombre_sujeto [ 1 ],
+ temperatura  =  temperatura [ 1 ],
+ estado_gripe  =  estado_gripe [ 1 ],
+ género  =  género [ 1 ],
+ sangre  =  sangre [ 1 ])
+sujeto1
+```
+
+Imprimir los datos de un paciente ahora es cuestión de escribir un solo comando:
+
+### **Marcos de datos**
+
+Un marco de datos es una estructura de datos importante que se usa en el aprendizaje automático de R, similar a una hoja de cálculo o una base de datos que contiene filas y columnas de datos. Consiste en vectores o listas de factores con el mismo número de valores, por lo que es una combinación de vectores y listas.
+
+Usando los vectores de datos de pacientes que creamos previamente, elmarco de datos()la función los combina en un marco de datos:
+
+```{r}
+pt_data  <-  data.frame ( subject_name , temperatura , flu_status ,
+ género , sangre , stringsAsFactors  =  FALSO )
+pt_datos
+```
+
+En comparación con los vectores, factores y listas unidimensionales, un marco de datos tiene dos dimensiones y, por lo tanto, se muestra en formato de matriz.
+
+La forma más directa de extraer un solo elemento, en este caso un vector o columna de datos, es referida a él por su nombre. Por ejemplo, para obtener el nombre del tema vectorial, tipo.
+
+```{r}
+pt_datos $ sujeto_nombre
+```
+
+Se puede usar un vector de nombres para extraer varias columnas de un marco de datos:
+
+```{r}
+pt_data [c( " temperatura " , " flu_status " )]
+```
+
+Para extraer el valor de la primera fila y la segunda columna del marco de datos del paciente (el valor de temperatura para John Doe), ingresaría:
+
+```{r}
+ datos_pt [ 1 , 2 ]
+```
+
+Si desea más de una fila o columna de datos, puede hacerlo especificando vectores para los números de fila y columna que desea.
+
+```{r}
+datos_pt [c( 1 , 3 ),c( 2 , 4 )]
+```
+
+Para extraer todas las filas o columnas, en lugar de enumerarlas todas, simplemente deje en blanco la parte de la fila o la columna.
+
+```{r}
+datos_pt [, 1 ]
+```
+
+Para extraer todas las columnas de la primera fila:
+
+```{r}
+datos_pt [ 1 , ]
+```
+
+Y para extraer todo:
+
+```{r}
+datos_pt [ , ]
+```
+
+Se puede acceder a las columnas por nombre en lugar de por posición, y se pueden usar signos negativos para eliminar filas o columnas de datos. Por lo tanto, la declaración:
+
+```{r}
+pt_data [c( 1 , 3 ), c( " temperatura " , " género " )]
+```
+
+Es equivalente a:
+
+```{r}
+datos_pt [ - 2 ,c( - 1 , - 3 , - 5 )]
+```
+
+### **Matrices y arreglos**
+
+-   La matriz es una estructura de datos que representa una tabla bidimensional, con filas y columnas de datos.
+
+-   Las matrices R pueden contener cualquier tipo de datos, aunque se usan con mayor frecuencia para operaciones matemáticas y, por lo tanto, normalmente almacenan solo datos numéricos.
+
+Para crear una matriz, simplemente suministre un vector de datos matriz()función, junto con un parámetro que especifique el número de filas (fila)o número de columnas (ncol).
+
+```{r}
+m  <-  matriz (c( ' a ' , ' b ' , ' c ' , ' d ' ), nrow  =  2 )
+metro
+```
+
+Esto es equivalente a la matriz producida usando ncol = 2:
+
+```{r}
+m  <-  matriz (c( ' a ' , ' b ' , ' c ' , ' d ' ), ncol  =  2 )
+metro
+```
+
+Con seis valores, solicite dos filas crea una matriz con tres columnas:
+
+```{r}
+m  <-  matriz (c( ' a ' , ' b ' , ' c ' , ' d ' , ' e ' , ' f ' ), nrow  =  2 )
+metro
+```
+
+De manera similar, solicitar dos columnas crea una matriz con tres filas:
+
+```{r}
+m  <-  matriz (c( ' a ' , ' b ' , ' c ' , ' d ' , ' e ' , ' f ' ), ncol  =  2 )
+metro
+```
+
+Del mismo modo, se pueden solicitar filas o columnas enteras:
+
+```{r}
+metro [ 1 , ]
+```
+
+```{r}
+m [, 1 ]
+```
+
+### **Gestión de datos con R**
+
+Uno de los desafíos de trabajar con grandes conjuntos de datos es la recopilación, preparación y gestión de datos de múltiples fuentes. Pero las herramientas de R facilitan esta tarea al permitirle cargar datos de muchos formatos comunes.
+
+### **Guardar y cargar estructuras de datos R**
+
+-   Para evitar tener que volver a crear el marco de datos cada vez que reinicia su sesión de R, puede usar la función Guardar() para guardar la estructura de datos en un archivo que luego se puede volver a cargar o transferir a otro sistema.
+
+-   La función save() escribe una estructura de datos R en la ubicación especificada por el parámetro de archivo y el archivo de datos R tiene la extensión .RData.
+
+Si tuviéramos tres objetos llamadosx, y,yz,podríamos guardarlos en un archivomisdatos.RData usando el siguiente comando:
+
+`guardar(x, y, z, archivo = "misdatos.RData"`
+
+Para cargar mydat.RData que guardamos en el código anterior, simplemente escriba:
+
+`load("misdatos.RData")`
+
+**Importante:** Si necesita terminar su sesión de R rápidamente, save.image(). De forma predeterminada, R buscará este archivo la próxima vez que inicie R, y su sesión se volverá a tal como la dejó.
+
+### **Importar y guardar datos de archivos CSV**
+
+Los archivos de texto son una forma común de almacenar datos públicos porque están disponibles en cualquier sistema operativo y se pueden importar y exportar desde programas como Excel.
+
+Estos archivos se pueden estructurar como una matriz, tabulada, donde cada fila es un ejemplo y contiene un número igual de funciones separadas por un delimitador predefinido.
+
+La primera fila también suele contener los nombres de columna de los datos, conocidos como fila de encabezado.
+
+Un archivo CSV que represente el conjunto de datos médicos construidos previamente tendrá el siguiente aspecto:
+
+`nombre_sujeto,temperatura,estado_gripe,género,tipo_sangre`
+
+`John Doe, 98.1, FALSO, MASCULINO, O Jane Doe, 98.6, FALSO, FEMENINO, AB`
+
+`Steve Graves, 101.4, VERDADERO, MASCULINO, A`
+
+Para cargar este archivo CSV en R
+
+`pt_data <- read.csv("pt_data.csv", stringsAsFactors = FALSE)`
+
+Si sus datos residen fuera del directorio de trabajo de R, puede especificar la ruta al archivo CSV especificando la ruta completa.
+
+Si un archivo CSV no tiene encabezados, especifique la opción encabezado = FALSO como se muestra en el siguiente comando, y R asignará nombres de características predeterminadas en la formaV1, V2: `mydata <- read.csv("mydata.csv", stringsAsFactors = FALSO, encabezado = FALSO)`
+
+-   La función **read.csv()** es un caso especial de función **read.table()** , que puede leer datos tabulares en muchas formas diferentes.
+
+-   Para guardar un marco de datos en un archivo CSV, use el método **write.CSV ()** .
+
+-   Si su marco de datos se llama **pt_data** , simplemente ingrese:
+
+```         
+`escribir.csv(pt_datos, archivo = "pt_datos.csv")`
+```
+
+### **Importación de datos de bases de datos SQL**
+
+Si sus datos se almacenan en un ODBC (Conectividad de base de datos abierta) SQL (lenguaje de consulta estructurado) base de datos como Oracle, MySQL, PostgreSQL, Microsoft SQL o SQLite, el paquete RODBC creado por Brian Ripley se puede utilizar para importar estos datos directamente en un marco de datos R.
+
+ODBC es un protocolo estándar para conectar a bases de datos independientemente del sistema operativo oSGBD (Sistema de administración de base de datos).
+
+debe instalar y cargar el paquete RODBC:
+
+`instalar.paquetes("RODBC")`
+
+`biblioteca(RODBC)`
+
+### **Exploración y comprensión de datos**
+
+-   La siguiente etapa del aprendizaje automático consiste en analizar a fondo los datos recopilados en R.
+
+-   Se examinan las características y los ejemplos para identificar las peculiaridades y elegir el mejor modelo.
+
+-   La recopilación de datos **usedcars.csv** es un ejemplo de exploración de datos sobre autos usados a la venta en un sitio web estadounidense.
+
+Podemos usar read.csv() función para cargar los datos en un marco de datos R:
+
+```{r}
+usedcars <- read.csv( " usedcars.csv " , stringsAsFactors  =  FALSE )
+```
+
+### **Explorando la estructura de los datos**
+
+La función str() proporciona un método para mostrar la estructura de un marco de datos, o cualquier estructura de datos R, incluidos vectores y listas.
+
+Se puede utilizar para crear el esquema básico de nuestro diccionario de datos:
+
+```{r}
+str(usedcars)
+```
+
+Se obtuvo gracias al comando:
+
+-   Hay 150 observaciones en los datos, lo que sugiere que se trate de ejemplos de automóviles usados en venta.
+
+-   Las 6 variables declaración se refiere a las seis características que se registraron en los datos.
+
+-   La variable, chr nos dice que la feature es de tipo carácter.
+
+A veces, los nombres de las variables en los conjuntos de datos no tienen sentido y pueden requerir más investigación para comprender lo que realmente representan. Si bien los nombres pueden ser útiles, es importante ser selectivo y verificar las etiquetas de las variables.
+
+### **Explorando variables numéricas**
+
+**La función summary()** muestra varias estadísticas resumidas comunes.
+
+Ejemplo una sola caracteristica del año:
+
+```{r}
+summary(usedcars$year)
+```
+
+También podemos usar **la función summary()** para obtener estadísticas de resumen para varias variables numéricas al mismo tiempo:
+
+```{r}
+summary(usedcars[c("price", "mileage")])
+```
+
+La función proporciona herramientas simples para investigar datos.
+
+-   Se pueden dividir en dos tipos:
+
+1.  Medidas del centro
+
+2.  medidas de dispersión
+
+### **Medición de la tendencia central: media y mediana**
+
+Las medidas de tendencia central son estadísticas que se utilizan para encontrar un valor en medio de un conjunto de datos, siendo los medios la medida más familiar y frecuentemente utilizada. El promedio es la suma de todos los valores divididos por el número de valores y representa el valor típico en el grupo. Sirve como punto de referencia para juzgar otros valores en el conjunto.
+
+Por ejemplo, para calcular el ingreso medio en un grupo de tres personas con ingresos de \$ 35 000, \$ 45 000 y \$ 55 000, podríamos escribir:
+
+```{r}
+( 36000  +  44000  +  56000 ) /  3
+```
+
+-   La función **mean()** calcula la media de un vector de números:
+
+```{r}
+mean(c(36000, 44000, 56000))
+```
+
+El ingreso medio de este grupo de personas es de \$ 45.333,33.
+
+-   La mediana, que es el valor que aparece en la mitad de una lista ordenada de valores. R proporciona la función **median()** , podemos aplicar a nuestros datos salariales como se muestra en el siguiente ejemplo:
+
+```{r}
+median(c(36000, 44000, 56000))
+```
+
+### **Medición de la dispersión: cuartiles y el resumen de cinco números**
+
+Medir la media y la mediana es útil para resumir rápidamente los datos, pero no nos proporciona información sobre la diversidad de los mismos.
+
+Para medir la dispersión, es necesario utilizar estadísticas que se ocupen de la acumulación en los datos.
+
+El resumen de cinco números es un conjunto de cinco estadísticas que representan la dispersión de un conjunto de datos:
+
+1.  Mínimo (Min.)
+
+2.  Primer cuartil o Q1 (1st Qu.)
+
+3.  Mediana o Q2 (Mediana)
+
+4.  Tercer cuartil o Q3 (3rd Qu.)
+
+5.  Máximo (Máx.)
+
+El lapso entre el valor mínimo y máximo se conoce como gama.
+
+-   La función **range()** devuelve tanto el valor mínimo como el máximo.
+
+Ejemplo:
+
+```{r}
+range(usedcars$price)
+```
+
+```{r}
+diff(range(usedcars$price))
+```
+
+Los cuartiles primero y tercero, Q1 y Q3, se refieren al valor por debajo o por encima del cual se encuentra una cuarta parte de los valores La diferencia entre Q1 y Q3:
+
+Se conoce como rango intercuartil (IQR), y se puede calcular con la **función IQR()** :
+
+```{r}
+IQR(usedcars$price)
+```
+
+La función **quantile()** devuelve el resumen de cinco números.
+
+```{r}
+quantile(usedcars$price)
+```
+
+Si especificamos un parámetro **probs** adicional usando un vector que denota puntos de corte, podemos obtener cuantiles arbitrarios, como los percentiles 1 y 99:
+
+```{r}
+quantile(usedcars$price, probs = c(0.01, 0.99))
+```
+
+La función de secuencia **seq()** se utiliza para generar vectores de valores espaciados uniformemente.
+
+```{r}
+ quantile(usedcars$price, seq(from = 0, to = 1, by = 0.20))
+```
+
+### **Visualización de variables numéricas: diagramas de caja**
+
+La visualización de variables numéricas es útil para detectar problemas de datos. Un gráfico común es el diagrama de caja, que muestra el centro y la distribución de variables numéricas en un formato fácil de entender. Este gráfico le permite comprender rápidamente el rango y la varianza de una variable y compararla con otras variables. También se conoce como pieza de caja y bigotes.
+
+Los comandos para crear diagramas de caja de precio y kilometraje son:
+
+```{r}
+boxplot(usedcars$price, main="Boxplot of Used Car Prices",
+ ylab="Price ($)")
+```
+
+```{r}
+boxplot(usedcars$mileage, main="Boxplot of Used Car Mileage",
+ ylab="Odometer (mi.)")
+```
+
+Al leer el gráfico de abajo hacia arriba, las líneas horizontales representan Q1, Q2 (mediana) y Q3.
+
+La mediana está representada por una línea negra alineada con los valores de precio y kilometraje en el eje vertical.
+
+**Importante:** En diagramas simples como se muestra arriba:
+
+-   Los anchos de caja y bigotes son arbitrarios y no se especifican propiedades de datos.
+
+-   Para un análisis más complejo, es la forma y el tamaño de la caja se pueden utilizar la comparación más fácil de datos entre diferentes grupos.
+
+### **Visualización de variables numéricas -- histogramas**
+
+-   Un histograma es una forma de representar gráficamente la distribución de una variable numérica.
+
+-   El histograma se compone de una serie de barras con alturas que indican el conteo, o frecuencia, de valores que caen dentro de cada uno de los contenedores de igual tamaño que dividen los valores.
+
+-   Es una herramienta útil para determinar la forma de la distribución de datos e identificar patrones o anomalías en los datos.
+
+Los comandos para crear un histograma son:
+
+La función hist() crea un histograma:
+
+```{r}
+hist(usedcars$price, main = "Histogram of Used Car Prices",
+ xlab = "Price ($)")
+```
+
+-   Las líneas verticales que separan las barras, tal como están etiquetadas en el eje horizontal, indican los puntos inicial y final del rango de valores del contenedor.
+
+-   En el histograma de precio, cada una de las 10 barras abarca un intervalo de \$ 2,000, comenzando en \$ 2,000 y terminando en \$ 22,000.
+
+-   La barra más alta en el centro de la figura cubre el rango de \$ 12 000 a \$ 14 000 y tiene una frecuencia de 50.
+
+-   Dado que sabemos que nuestros datos incluyen 150 autos, sabemos que un tercio de todos los autos tienen un precio de \$ 12 000 a \$ 14 000. Casi 90 autos, más de la mitad, tienen un precio de \$ 12,000 a \$ 16.000.
+
+```{r}
+hist(usedcars$mileage, main = "Histogram of Used Car Mileage",
+ xlab = "Odometer (mi.)")
+```
+
+-   El histograma kilometraje incluye ocho barras que indican intervalos de 20 000 millas cada uno, comenzando en 0 y terminando en 160 000 millas.
+
+*La forma de los dos histogramas es algo diferente* : Parece que los precios de los autos usados tienden a dividirse equitativamente a ambos lados del medio, mientras que el kilometraje de los autos se extiende más hacia la derecha.
+
+![Fig 7. Histograma](images/oct.png){fig-align="center"}
+
+### **Comprensión de datos numéricos: distribuciones uniformes y normales**
+
+La distribución de una variable describe la probabilidad de que un valor caiga dentro de varios rangos.
+
+Una distribución uniforme ocurre cuando todos los valores tienen la misma probabilidad de ocurrir. Es fácil de detectar con un histograma donde las barras tienen aproximadamente la misma altura.
+
+Es importante tener en cuenta que no todos los eventos aleatorios son uniformes.
+
+Distribución normal es una distribución de datos en forma de campana. La curva de campana estereotipada se muestra en la figura 8:
+
+![Figura 8. Distribución normal](images/nov.png){fig-align="center"}
+
+### **Medición de la dispersión: variación y desviación estándar**
+
+La propagación se mide mediante una llamada estadística desviación estándar.
+
+La desviación estándar es la raíz cuadrada de la varianza y se denota por sigma como se muestra en la siguiente fórmula:
+
+![Figura 9. Fórmula desviación estándar](images/die.png){fig-align="center"}
+
+Para obtener la varianza y el desvío estándar se utiliza las siguientes funciones:
+
+```{r}
+var(usedcars$price)
+```
+
+```{r}
+ sd(usedcars$price)
+```
+
+```{r}
+var(usedcars$mileage)
+```
+
+```{r}
+sd(usedcars$mileage)
+```
+
+-   Al interpretar la varianza, los números más grandes indican que los datos se distribuyen más ampliamente alrededor de los medios.
+
+-   La desviación estándar indica, en promedio, cuánto difiere cada valor de la media.
+
+### **Explorando variables categóricas**
+
+Los datos categóricos se examinan mediante tablas en lugar de estadísticas de resumen.
+
+Una tabla que presenta una sola variable categórica se conoce como tabla unidireccional.
+
+La función **table()** se puede usar para generar tablas unidireccionales para nuestros datos de autos usados:
+
+```{r}
+table(usedcars$year)
+```
+
+```{r}
+table(usedcars$model)
+```
+
+```{r}
+table(usedcars$color)
+```
+
+```{r}
+model_table <- table(usedcars$model)
+prop.table(model_table)
+```
+
+Los resultados de la prop.tabla() se pueden combinar con otras funciones de R para transformar la salida:
+
+```{r}
+color_table <- table(usedcars$color)
+color_pct <- prop.table(color_table) * 100
+round(color_pct, digits = 1)
+```
+
+### **Medición de la tendencia central: La moda**
+
+-   La moda de una característica es el valor que ocurre con mayor frecuencia. Al igual que la media y la mediana, la moda es otra medida de tendencia central.
+
+-   A menudo se usa para datos categóricos, ya que la media y la mediana no están definidas para variables nominales.
+
+### **Explorando relaciones entre variables**
+
+Las relaciones de más de dos variables se llaman relaciones multivariantes.
+
+### **Visualización de relaciones: Diagramas de dispersión**
+
+-   Un diagrama de dispersión es un gráfico bidimensional que muestra una relación bidimensional entre dos funciones.
+
+-   Un valor de atributo se utiliza para determinar la posición horizontal del punto, mientras que el otro valor de atributo determina la posición vertical.
+
+-   Los patrones de aparición de puntos pueden revelar asociaciones entre dos rasgos.
+
+El comando completo para crear nuestro diagrama de dispersión es:
+
+```{r}
+plot(x = usedcars$mileage, y = usedcars$price,
+ main = "Scatterplot of Price vs. Mileage",
+ xlab = "Used Car Odometer (mi.)",
+ ylab = "Used Car Price ($)")
+```
+
+Al observar un diagrama de dispersión que muestra la relación entre los precios de los autos usados y las lecturas del odómetro, puede ver que a medida que aumenta el valor en el eje horizontal (kilometraje), el valor en el eje vertical (precio ) tiende a disminuir a medida que disminuye el valor.
+
+Esto significa que los coches con mayor kilometraje son más baratos. Es una idea que cualquier persona que haya comprado o vendido un auto usado generalmente entenderá.
+
+La fuerza de una asociación lineal entre dos variables se mide mediante una estadística conocida como afectación.
+
+### **Examen de las relaciones: Tabulaciones cruzadas de dos factores**
+
+-   Una tabulación cruzada es una herramienta para probar la relación entre dos variables nominales.
+
+-   Esta herramienta es similar a un gráfico de dispersión en el sentido de que le permite examinar cómo varía el valor de una variable con otra variable.
+
+-   Una tabulación cruzada es una tabla en la que las filas representan los niveles de una variable y las columnas representan los niveles de otra variable.
+
+-   El conteo en cada celda de la tabla indica el número de valores que pertenecen a una determinada combinación de filas y columnas.
+
+Instalar el tipo de paquete (gmodels):
+
+`instalar.paquetes("gmodels")`
+
+```{r}
+install.packages("gmodels")
+```
+
+Después de que se instale el paquete, simplemente escriba en la biblioteca (modelos g) para cargar el paquete.
+
+Después de que se instale el paquete, simplemente escriba en la biblioteca (modelos g) para cargar el paquete.
+
+Simplificar el proyecto reducir el número de niveles en la variable color.
+
+```{r}
+usedcars$conservative <-
+ usedcars$color %in% c("Black", "Gray", "Silver", "White")
+```
+
+Examinando el resultado de table()vemos que alrededor de dos tercios de los automóviles tienen colores conservadores, mientras que un tercio no los tiene:
+
+```{r}
+table(usedcars$conservative)
+```
+
+Tabulación cruzada para ver cómo la proporción de conservadores los coches de colores varía según el modelo:
+
+CrossTable(x = autos usados \$ modelo, y = autos usados \$ conservador)
+
+```{r}
+CrossTable(x = usedcars$model, y = usedcars$conservative)
+```
+
+![Figura 10. Tabla cruzada](images/once.png){fig-align="center"}
+
+Hay una gran cantidad de datos en la tabla cruzada()producción.
+
+-   La parte superior (etiquetado contenido de la celda) indica cómo interpretar cada valor.
+
+-   Las filas de la tabla indican los tres modelos de autos usados: SE, SE, y SES (más una fila adicional para el total de todos los modelos).
+
+-   Las columnas indican si el color del automóvil es conservador o no (más una columna que totaliza ambos tipos de color).
+
+-   El primer valor de cada celda indica el número de coches con esa combinación de modelo y color.
+
+-   Las proporciones indican la proporción de esa celda en relación con la estadística Chi-cuadrado, el total de la fila, el total de las columnas y el total de la tabla.
+
+### Resumen
+
+-   Este capítulo cubre los conceptos básicos de la gestión de datos en R.
+
+-   Se analiza en detalle varios tipos de estructuras de almacenamiento de datos, comenzando con vectores y expandiéndose a tipos de datos más complejos, como listas y marcos de datos.
+
+-   Se resalta un marco de datos, que es una estructura de datos en R que representa el concepto de un conjunto de datos de funciones y ejemplos.
+
+-   Además, cómo recuperar datos en R de una variedad de fuentes, incluidos archivos CSV y bases de datos SQL, que se pueden consultar con el paquete RODBC.

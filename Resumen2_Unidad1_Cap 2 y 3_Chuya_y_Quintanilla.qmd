@@ -1,0 +1,382 @@
+---
+title: "Regresión lineal simple y múltiple: Capítulos 2 y 3 de An Introduction to Statistical Learning"
+author: "Maria Isabel Chuya - Nataly Quintanilla"
+format: pdf
+editor: visual
+---
+
+# Capítulo 2
+
+## Aprendizaje Estadístico
+
+Esencialmente, el aprendizaje estadístico se refiere a un conjunto de métodos para estimar f (función), posiblemente involucrando múltiples variables de entrada.
+
+Hay dos razones principales para estimar f:
+
+-   Predicción
+
+-   Inferencia.
+
+    #### Predicción
+
+    El conjunto de entrada X está fácilmente disponible, pero la salida Y no.
+
+    Yˆ = ˆf(X)
+
+    -   ˆf representa nuestra estimación para f.
+
+    -   Yˆ representa la predicción resultante para Y.
+
+    #### Inferencia
+
+    Y se puede predecir usando el cálculo de f, e Y denota la predicción resultante de Y.
+
+    Para comprender la relación entre Y y X1,...,Xp, f debe estimarse, pero no necesariamente predecirse para Y. En este caso, \^f no puede considerarse una caja negra, ya que debe conocerse su forma exacta.
+
+### **¿Cómo estimamar f?**
+
+Se observa un conjunto de n puntos de datos distintos. Estas observaciones se definen datos de entrenamiento que se usarn para entrenar o aprender el método de estimación, por ejemplo, nuestros datos de entrenamiento consisten en {(x1,y1),(x2,y2),...,(xn,yn) } , donde xi =(xi1,xi2,...,xip)T.
+
+El objetivo es aplicar técnicas de aprendizaje estadístico a los datos de entrenamiento para estimar una función desconocida f.
+
+En general, la mayoría de los métodos de aprendizaje estadístico para esta tarea se pueden caracterizar como paramétricos o no paramétricos.
+
+#### **Métodos paramétricos:**
+
+Los métodos paramétricos implican un planteamiento basado en modelos de dos pasos.
+
+1\. Hacer una suposición sobre la forma funcional de f.
+
+2\. Seleccionar el modelo, procedimiento que utilice los datos de entrenamiento para ajustar o entrenar el modelo.
+
+#### **Métodos no paramétricos:**
+
+Los métodos no paramétricos no hacen suposiciones explícitas sobre la forma funcional de f. Buscan estimaciones de f que estén lo más cerca posible de los puntos de datos, pero que no sean demasiado gruesas o irregulares.
+
+### **Aprendizaje supervisado frente a aprendizaje no supervisado**
+
+El aprendizaje supervisado la mayoria de problemas puede pertenecer a una de estas dos categorías: **supervisados o no supervisados**.
+
+### **Problemas de regresión frente a problemas de clasificación**
+
+Las variables se pueden clasificar como cuantitativas o cualitativas, también conocidas como categóricas. Las variables cuantitativas toman valores numéricos, mientras que las variables cualitativas toman valores de diferentes categorías.
+
+Un problema con una variable de respuesta cuantitativa se denomina problema de regresión, mientras que un problema con una variable de respuesta cualitativa se denomina problema de clasificación. Sin embargo, la distinción no siempre es clara, ya que ciertos métodos, como la regresión logística, pueden usarse en ambos casos.
+
+### **Evaluación de la precisión de los modelos**
+
+Elegir el mejor método puede ser uno de los mayores desafíos al poner en práctica el aprendizaje estadístico.
+
+### **Medición de la calidad del ajuste**
+
+Para evaluar el rendimiento de un método de aprendizaje estadístico en un conjunto de datos dado, necesitamos una forma de medir qué tan bien sus predicciones se ajustan realmente a los datos observados. Esto significa que necesitamos determinar qué tan cerca está el valor de respuesta esperado de una observación dada del valor de respuesta real de esa observación.
+
+### **El equilibrio entre sesgo y varianza**
+
+La varianza se refiere a cuánto cambiaría f\^ si se usara un conjunto de datos de entrenamiento diferente para evaluarlo. Sin embargo, pequeños cambios en los datos de entrenamiento pueden generar grandes cambios en f si el método tiene una varianza alta. En general, los métodos estadísticos más flexibles marcan una mayor diferencia.
+
+### **El entorno de clasificación**
+
+Se logra un equilibrio entre el sesgo y la varianza, y dado que los yi ya no son cuantitativos, se trasladan a la configuración categórica con solo unos pocos cambios.
+
+#### **1. El clasificador de Bayes**
+
+Se puede demostrar que, dado un valor predicho, asignar cada observación a la clase más probable usando un clasificador muy simple reduce, en promedio, la tasa de error de una prueba dada. Los clasificadores bayesianos producen el nivel de error más bajo posible en la evidencia, denominado índice de error bayesiano. Este clasificador muy simple se llama clasificador bayesiano. En problemas de clasificación binaria con solo dos posibles valores de respuesta, ya sea clase 1 o clase 2.
+
+#### **2. K-Nearest Neighbors**
+
+Los clasificadores bayesianos son buenos para predecir respuestas cualitativas, pero en realidad no conocemos la distribución condicional de Y dada X, por lo que no se puede calcular. Como tal, es un estándar de oro inalcanzable contra el cual se pueden comparar otros métodos. Tanto en la regresión como en la clasificación, elegir el nivel correcto de flexibilidad es fundamental para el éxito de cualquier método de aprendizaje estadístico. La compensación entre el sesgo y la varianza implica lograr un equilibrio, lo que puede ser difícil debido a la forma de U del error de prueba.
+
+# Capítulo 3
+
+## Regresion Lineal
+
+La regresión lineal es una herramienta útil para predecir una respuesta cuantitativa
+
+### **Regresión lineal simple**
+
+La regresión lineal simple se utiliza para predecir de forma simple la respuesta cuantitativa Y en función de una única variable predictora X. *Función* *Relación lineal: Y ≈ β0 + β1X*
+
+-   Estimación de los coeficientes
+
+-   Evaluación de la precisión de las estimaciones de los coeficientes
+
+-   Evaluación de la precisión del modelo
+
+Residual Standard Error
+
+R2 Statistic
+
+### **Regresión lineal múltiple**
+
+Una opción es ejecutar tres regresiones lineales simples separadas, cada una con un medio publicitario diferente como variable de predicción. Sin embargo, el enfoque de ajustar un modelo de regresión lineal simple separado para cada predictor no es del todo satisfactorio. En lugar de ajustar un modelo de regresión lineal simple separado para cada predictor, es mejor extender el modelo de regresión lineal simple para ajustar directamente varios predictores. Podemos hacer esto proporcionando coeficientes de pendiente separados para cada predictor en un solo modelo.
+
+### **Estimación de los coeficientes de regresión**
+
+Algunas cuestiones importantes
+
+1.  ¿Existe una relación entre la respuesta y los predictores?
+2.  Decidir las variables importantes
+3.  Ajuste del modelo
+4.  Predicciones
+
+#### **Predictores cualitativos**
+
+Hay varios predictores cuantitativos: edad, tarjetas, educación, ingresos, límite y calificación.
+
+-   Predictores con sólo dos niveles
+-   Predictores cualitativos con más de dos niveles
+
+#### **Extensiones del modelo lineal**
+
+Los modelos de regresión lineal estándar brindan resultados interpretables y funcionan muy bien para muchos problemas del mundo real. Sin embargo, hace varias suposiciones muy fuertes que a menudo se violan en la práctica. Dos suposiciones clave establecen que la relación entre los predictores y la respuesta es aditiva y lineal. El supuesto de aditividad significa que la relación entre el predictor Xj y la respuesta Y es independiente de los valores de los otros predictores.
+
+-   Eliminación del supuesto aditivo
+-   Relaciones no lineales
+
+#### **Problemas potenciales**
+
+Surgen muchos problemas al ajustar un modelo de regresión lineal a un conjunto de datos dado. Los más comunes son los siguientes:
+
+1.  No linealidad de las relaciones respuesta-predictor.
+2.  Correlación de los términos de error.
+3.  Varianza no constante de los términos de error.
+4.  Valores atípicos.
+5.  Puntos de alto apalancamiento.
+6.  Colinealidad.
+
+### **Comparación de la regresión lineal con K-Nearest Neighbors**
+
+El enfoque paramétrico tiene ventajas como la interpretación sencilla de los coeficientes y un fácil ajuste. También tienen el inconveniente de hacer fuertes suposiciones sobre la estructura de f(X). El enfoque paramétrico podría no tener éxito si esta forma difiere significativamente de la realidad. Sin embargo, los métodos no paramétricos claramente no asumen una forma paramétrica de f(X), lo que les da una gama más amplia de opciones.
+
+La regresión K-vecino más cercano, también conocida como regresión KNN, es una de las técnicas no paramétricas más sencillas y conocidas. La técnica determina los puntos de entrenamiento K que son más similares al punto predicho x0 y calcula f(x0) como la media de las respuestas de entrenamiento en esos puntos.
+
+## Lab: Regresión lineal
+
+### Librerías
+
+La función library( ), se utiliza para cargar bibliotecas, o grupos de funciones.
+
+```{r}
+library(MASS)
+library(ISLR2)
+```
+
+Regresión lineal simple
+
+```{r}
+head(Boston)
+```
+
+La función lm( ), sirve para ajustar un modelo de regresión lineal simple
+
+```{r}
+lm.fit <- lm(medv ~ lstat , data = Boston)
+attach (Boston)
+lm.fit <- lm(medv ~ lstat)
+```
+
+### Regresión lineal
+
+Si usamos lm.fit, obtendremos información básica del modelo; sin embargo, el summary( ), para información más detallada
+
+```{r}
+lm.fit
+```
+
+```{r}
+summary(lm.fit)
+```
+
+La función names( ), sirve para encontrar otras piezas de información en el almacenamiento de lm.fit
+
+```{r}
+names(lm.fit)
+```
+
+Podemos ocupar el extractor de funciones "coef( )" para acceder a ellos.
+
+```{r}
+coef(lm.fit)
+```
+
+La función confint( ), sirve para obtener intervalos de confianza para coeficientes estimados
+
+```{r}
+confint(lm.fit)
+```
+
+La función predict( ), sirve para producir intervalos de confianza e intervalos de predicción.
+
+```{r}
+predict(lm.fit, data.frame(lstat= (c(5, 10, 15))), interval = "confidence")
+```
+
+```{r}
+predict(lm.fit, data.frame(lstat= (c(5, 10, 15))), interval = "prediction")
+```
+
+Para obtener un intervalo de confianza para las estimaciones de los coeficientes, podemos usar abline( ).
+
+La función abline( ), dibuja una línea.
+
+```{r}
+plot(lstat, medv)
+abline(lm.fit)
+```
+
+la función abline(a, b), sirve para dibujar una línea con intercepción a y pendiente b. El comando lwd hace que el ancho de la regresión lineal aunmente según el número que se determine.
+
+"pch" crea diferentes símbolos de trazado.
+
+```{r}
+plot(lstat, medv)
+abline (lm.fit, lwd = 3)
+abline (lm.fit, lwd = 3, col = "red" )
+plot (lstat , medv , col = " red ")
+plot (lstat , medv , pch = 20)
+plot (lstat , medv , pch = "+")
+plot (1:20, 1:20, pch = 1:20)
+```
+
+Las funciones par( ), mfrow( ) sirven para mostrar cuatro gráficos juntos.
+
+```{r}
+par (mfrow = c(2, 2))
+plot (lm.fit)
+```
+
+La función residuals( ), sirve para calcular los residuos de un ajuste de regresión lineal, mientras que la función rstudent( ), devolverá los residuos estudentizados.
+
+```{r}
+plot(predict(lm.fit), residuals(lm.fit))
+plot(predict(lm.fit), rstudent(lm.fit))
+```
+
+La función hatvalues( ), puede calcular cualquier número de predictores. La función "which.max" identifica el índice del elemento más grande de un vector.
+
+```{r}
+plot(hatvalues(lm.fit))
+which.max(hatvalues(lm.fit))
+```
+
+### Regresión lineal múltiple
+
+La función lm( ), sirve para ajustar un modelo de regresión lineal múltiple usando mínimos cuadrados.
+
+```{r}
+lm.fit <- lm(medv ~ lstat + age , data = Boston)
+summary (lm.fit)
+```
+
+En lugar de escribir todas las variables podemos utilizar la siguiente abreviatura.
+
+```{r}
+lm.fit <- lm(medv ~ ., data = Boston)
+summary (lm.fit)
+```
+
+La función vif( ), puede utilizarse para calcular los factores de inflación de la varianza, además debe instalarse el package "car".
+
+```{r}
+library (car)
+vif (lm.fit)
+```
+
+#### Regresión lineal
+
+Ejecutar una regresión lineal excluyendo un predictor, en este caso sería la edad.
+
+```{r}
+lm.fit1 <- lm(medv ~ . - age , data = Boston)
+summary (lm.fit1)
+```
+
+Tambien se puede utilizar la función update( ).
+
+```{r}
+ lm.fit1 <- update (lm.fit , ~ . - age)
+```
+
+### Términos de interacción
+
+```{r}
+summary (lm(medv ~ lstat * age , data = Boston))
+```
+
+### Transformaciones no lineales de los predictores
+
+Lm( ) puede acomodar transformaciones no lineales de los predictores, la función I( ), el uso estándar en R (poner un exponencial de 2).
+
+```{r}
+lm.fit2 <- lm(medv ~ lstat + I(lstat^2))
+summary (lm.fit2)
+```
+
+La función anova( ), realiza una prueba de hipótesis comparando los dos modelos.
+
+```{r}
+lm.fit <- lm(medv ~ lstat)
+anova (lm.fit , lm.fit2)
+```
+
+```{r}
+par (mfrow = c(2, 2))
+plot (lm.fit2)
+```
+
+Para crear un ajuste cúbico, podemos incluir un predictor de la forma I(x\^3), para un mejor enfoque podemos utilizar la función poly( ), que crea un polinomio dentro del lm( ).
+
+```{r}
+lm.fit5 <- lm(medv ~ poly (lstat , 5))
+summary (lm.fit5)
+```
+
+Realizamos la transformación de un registro.
+
+```{r}
+summary (lm(medv ~ log(rm), data = Boston))
+```
+
+### Predictores cualitativos
+
+Los Caarseats( ) forman parte del ISRL2, los datos incluyen predictores cualitativos como "Shelveloc", un indicador de la calidad de la ubicación de las estanterías.
+
+```{r}
+head (Carseats)
+```
+
+```{r}
+lm.fit <- lm(Sales ~ . + Income:Advertising + Price:Age ,
+data = Carseats)
+summary (lm.fit)
+```
+
+La función contrasts( ), devuelve la codificación que R usa para las variables ficticias.
+
+```{r}
+attach (Carseats)
+contrasts (ShelveLoc)
+```
+
+### Funciones de escritura
+
+Cargamos las librerías, con el Enter podemos ingresar muchos comandos y finalmente R informará que no se puede introducir más comandos.
+
+```{r}
+LoadLibraries <- function () {
++ library (ISLR2)
++ library (MASS)
++ print ("The libraries have been loaded .")}
+```
+
+Ahora si escribimos la función LoadLibraries, R nos dirá que hay en la función.
+
+```{r}
+LoadLibraries
+  function() {
+  library(ISLR2)
+  library(MASS)
+  print("The libraries have been loaded.")
+}
+```
